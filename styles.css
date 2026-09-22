@@ -321,3 +321,31 @@ h1 span{
     text-shadow:0 2px 6px rgba(0,0,0,.26)!important;
   }
 }
+
+
+/* Music group atmosphere */
+.hero{position:relative}
+.hero-music-decor{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.hero-grid{position:relative;z-index:1}
+.music-note{position:absolute;color:rgba(242,183,5,.16);font-family:"Lobster",cursive;line-height:1;text-shadow:0 2px 10px rgba(0,0,0,.25);animation:floatMusic 6s ease-in-out infinite}
+.note-1{top:12%;left:7%;font-size:2.4rem}
+.note-2{top:20%;right:16%;font-size:3rem;animation-delay:1s}
+.note-3{bottom:28%;left:10%;font-size:2rem;animation-delay:2s}
+.note-4{bottom:15%;right:10%;font-size:2.6rem;animation-delay:3s}
+.guitar-decor{position:absolute;right:3%;top:17%;font-size:9rem;opacity:.065;transform:rotate(-12deg);filter:drop-shadow(0 10px 20px rgba(0,0,0,.28))}
+@keyframes floatMusic{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+
+.event-card .icon{font-size:2.1rem;line-height:1;filter:drop-shadow(0 4px 8px rgba(0,0,0,.08))}
+.cta-copy{position:relative}
+.cta-notes{display:flex;gap:10px;margin-top:10px;color:rgba(255,244,220,.62);font-size:1.35rem;text-shadow:0 2px 6px rgba(0,0,0,.18)}
+.cta-notes span:nth-child(2){transform:translateY(-3px)}
+
+@media(max-width:600px){
+  .music-note{font-size:1.5rem}
+  .note-1{top:8%;left:5%}
+  .note-2{top:14%;right:8%;font-size:1.9rem}
+  .note-3{bottom:25%;left:7%}
+  .note-4{bottom:14%;right:7%;font-size:1.8rem}
+  .guitar-decor{font-size:5.5rem;right:4%;top:23%;opacity:.05}
+  .cta-notes{justify-content:center}
+}
