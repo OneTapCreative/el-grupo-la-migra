@@ -265,3 +265,27 @@ h1 span{
   h1{font-size:3rem}
   .city-list{grid-template-columns:1fr 1fr}
 }
+
+
+/* Testimonials visibility refinement */
+.testimonials .section-heading h2{
+  color:#f2b705!important;
+  text-shadow:0 1px 0 #8b4500,0 3px 10px rgba(0,0,0,.35)!important;
+}
+.testimonials .section-heading .eyebrow{
+  color:#ff6f61!important;
+}
+.testimonials .section-heading p{
+  color:#eadfce!important;
+}
+.testimonials .review{
+  background:rgba(255,248,235,.075)!important;
+  border-color:rgba(242,183,5,.28)!important;
+  box-shadow:0 14px 34px rgba(0,0,0,.18);
+}
+.testimonials .review p{
+  color:#f3e7d6!important;
+}
+.testimonials .review cite{
+  color:#e1bd72!important;
+}
