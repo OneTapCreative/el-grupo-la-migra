@@ -408,3 +408,24 @@ h1 span{
     font-size:.8rem;
   }
 }
+
+
+/* Normalize all quote form fields */
+.quote-form input,
+.quote-form select,
+.quote-form textarea{
+  width:100%;
+  border:1px solid #dfc59c!important;
+  background:#fffdf8!important;
+  border-radius:9px!important;
+  padding:12px 13px!important;
+  outline:none;
+  min-height:46px;
+  box-sizing:border-box;
+}
+.quote-form textarea{
+  min-height:auto;
+}
+.quote-form select{
+  appearance:auto;
+}
