@@ -201,13 +201,86 @@
       <div class="container quote-grid">
         <div class="quote-copy reveal"><p class="eyebrow red">BOOK YOUR DATE</p><h2>Request a Quote</h2><p>Tell us about your event. We’ll use the details to confirm availability and provide a custom quote.</p><div class="contact-card"><strong>Booking Contact</strong><span>Phone: Add client number</span><span>Email: Add booking email</span><span>Instagram: Add profile link</span></div></div>
         <form class="quote-form reveal" id="quote-form" novalidate>
-          <div class="field-row"><label>Full Name<input required name="name" autocomplete="name" /></label><label>Phone<input required name="phone" autocomplete="tel" inputmode="tel" /></label></div>
-          <label>Email<input required type="email" name="email" autocomplete="email" /></label>
-          <div class="field-row"><label>Event Type<select required name="eventType"><option value="">Select event</option><option>Wedding</option><option>Quinceañera</option><option>Birthday</option><option>Private Party</option><option>Festival / Community Event</option><option>Other</option></select></label><label>Event Date<input required type="date" name="eventDate" /></label></div>
-          <label>Event Location<input required name="location" placeholder="City / venue" /></label>
-          <label>Estimated Guests<input name="guests" inputmode="numeric" placeholder="Example: 150" /></label>
-          <label>Tell us about your event<textarea required name="message" rows="5" placeholder="Performance time, venue, schedule, special requests, etc."></textarea></label>
+          <div class="form-section-title"><span>1</span><strong>Your Contact Info</strong></div>
+          <div class="field-row">
+            <label>Full Name<input required name="name" autocomplete="name" /></label>
+            <label>Phone<input required name="phone" autocomplete="tel" inputmode="tel" /></label>
+          </div>
+          <div class="field-row">
+            <label>Email<input required type="email" name="email" autocomplete="email" /></label>
+            <label>Preferred Contact Method
+              <select required name="preferredContact">
+                <option value="">Choose one</option>
+                <option>Text Message</option>
+                <option>Phone Call</option>
+                <option>Email</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-section-title"><span>2</span><strong>Event Details</strong></div>
+          <div class="field-row">
+            <label>Event Type
+              <select required name="eventType">
+                <option value="">Select event</option>
+                <option>Wedding</option>
+                <option>Quinceañera</option>
+                <option>Birthday</option>
+                <option>Private Party</option>
+                <option>Festival / Community Event</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Event Date<input required type="date" name="eventDate" /></label>
+          </div>
+          <div class="field-row">
+            <label>Event Start Time<input required type="time" name="startTime" /></label>
+            <label>Event End Time<input type="time" name="endTime" /></label>
+          </div>
+          <div class="field-row">
+            <label>Venue Name<input name="venue" placeholder="Venue or property name" /></label>
+            <label>Event Location<input required name="location" placeholder="City or venue address" /></label>
+          </div>
+          <div class="field-row">
+            <label>Event Setting
+              <select required name="setting">
+                <option value="">Choose setting</option>
+                <option>Indoor</option>
+                <option>Outdoor</option>
+                <option>Indoor & Outdoor</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </label>
+            <label>Estimated Guests<input name="guests" inputmode="numeric" placeholder="Example: 150" /></label>
+          </div>
+
+          <div class="form-section-title"><span>3</span><strong>Performance Preferences</strong></div>
+          <div class="field-row">
+            <label>Estimated Performance Length
+              <select name="performanceLength">
+                <option value="">Select length</option>
+                <option>1–2 Hours</option>
+                <option>3 Hours</option>
+                <option>4 Hours</option>
+                <option>5+ Hours</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </label>
+            <label>Budget Range <small class="optional-label">Optional</small>
+              <select name="budget">
+                <option value="">Select budget</option>
+                <option>Under $1,000</option>
+                <option>$1,000–$2,000</option>
+                <option>$2,000–$3,000</option>
+                <option>$3,000+</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </label>
+          </div>
+          <label>Tell us about your event<textarea required name="message" rows="5" placeholder="Schedule, special requests, song requests, setup details, etc."></textarea></label>
+
           <button class="btn btn-primary full" type="submit">Send Quote Request</button>
+          <p class="form-help">The more details you provide, the easier it is for us to confirm availability and prepare an accurate quote.</p>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           <p class="privacy-note">By submitting, you agree to be contacted about your event request. No spam.</p>
         </form>
