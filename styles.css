@@ -289,3 +289,21 @@ h1 span{
 .testimonials .review cite{
   color:#e1bd72!important;
 }
+
+
+/* CTA headline contrast refinement */
+.cta-band .cta-content h2{
+  color:#fff4dc!important;
+  -webkit-text-stroke:1px #8a4300;
+  text-shadow:
+    0 1px 0 #d39200,
+    0 3px 8px rgba(0,0,0,.28)!important;
+}
+@media(max-width:600px){
+  .cta-band .cta-content h2{
+    -webkit-text-stroke:.75px #8a4300;
+    text-shadow:
+      0 1px 0 #d39200,
+      0 2px 6px rgba(0,0,0,.24)!important;
+  }
+}
