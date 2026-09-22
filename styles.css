@@ -162,3 +162,13 @@ h2{color:#8c0f10}
 /* Header logo spacing refinement */
 .brand-copy strong{margin-bottom:.5rem!important}
 .brand-copy small{display:block;margin-top:.38rem!important;line-height:1.25!important;letter-spacing:.16em!important;position:relative;top:2px}
+
+
+/* Hero headline outline refinement */
+h1 span{
+  color:#c91818!important;
+  -webkit-text-stroke:.8px #d89b00!important;
+  text-shadow:
+    0 1px 0 #8b4500,
+    0 3px 8px rgba(0,0,0,.30)!important;
+}
