@@ -157,3 +157,8 @@ h2{color:#8c0f10}
   background:linear-gradient(180deg,#d61c1d,#930c0d);
   border:1px solid var(--gold)
 }
+
+
+/* Header logo spacing refinement */
+.brand-copy strong{margin-bottom:.5rem!important}
+.brand-copy small{display:block;margin-top:.38rem!important;line-height:1.25!important;letter-spacing:.16em!important;position:relative;top:2px}
