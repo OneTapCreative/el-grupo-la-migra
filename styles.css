@@ -4,3 +4,23 @@
 .language-toggle:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.32)}
 .language-toggle .lang-active{color:#fff;background:linear-gradient(135deg,var(--blue),var(--red));border-radius:999px;padding:.16rem .34rem}
 @media(max-width:900px){.language-toggle{justify-content:center;width:100%;padding:.7rem}}
+
+.travel-section{background:linear-gradient(180deg,#fff,#f4f7fb)}
+.travel-head{display:grid;grid-template-columns:1fr auto;gap:44px;align-items:center;margin-bottom:34px}
+.travel-head h2{max-width:820px}
+.travel-intro{max-width:820px;color:#637083;font-size:1.02rem}
+.radius-badge{width:190px;height:190px;border-radius:50%;display:grid;place-items:center;align-content:center;text-align:center;background:radial-gradient(circle at 35% 25%,#173e7a,#08101e 68%);color:#fff;border:5px solid rgba(25,118,255,.45);box-shadow:0 22px 55px rgba(9,34,75,.18),inset 0 0 0 5px rgba(239,35,60,.12)}
+.radius-badge strong{font-family:"Bebas Neue";font-size:4.6rem;line-height:.9;color:#fff}
+.radius-badge span{font-size:.76rem;font-weight:900;letter-spacing:.14em;color:#ff6476}
+.radius-badge small{font-size:.63rem;font-weight:800;letter-spacing:.12em;color:#9fc4ff;margin-top:5px}
+.travel-callout{display:flex;gap:18px;align-items:center;background:linear-gradient(90deg,#0b1628,#101d31);color:#fff;border-radius:16px;padding:22px 26px;margin-bottom:24px;border:1px solid rgba(25,118,255,.25)}
+.travel-callout .travel-pin{font-size:2rem}
+.travel-callout strong{display:block;font-size:1.02rem;margin-bottom:2px}
+.travel-callout p{margin:0;color:#afbbcd;font-size:.88rem}
+.city-list{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:24px 0 30px}
+.city-list span{display:flex;align-items:center;min-height:42px;padding:9px 12px;background:#fff;border:1px solid #dde5f0;border-radius:9px;font-size:.8rem;font-weight:700;color:#475467;box-shadow:0 5px 14px rgba(27,46,79,.035)}
+.city-list span:before{content:"•";color:var(--blue);margin-right:8px;font-size:1rem}
+.travel-note{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;background:#fff;border:1px solid #dde5ef;border-left:4px solid var(--red);border-radius:12px;padding:20px 22px;box-shadow:0 14px 30px rgba(29,48,78,.05)}
+.travel-note strong{white-space:nowrap}.travel-note span{color:#667085;font-size:.86rem}
+@media(max-width:900px){.travel-head{grid-template-columns:1fr}.radius-badge{width:160px;height:160px}.city-list{grid-template-columns:repeat(3,1fr)}.travel-note{grid-template-columns:1fr}.travel-note strong{white-space:normal}}
+@media(max-width:600px){.city-list{grid-template-columns:1fr 1fr}.radius-badge{width:145px;height:145px}.radius-badge strong{font-size:3.7rem}.travel-callout{align-items:flex-start}.travel-note .btn{width:100%}}
