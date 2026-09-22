@@ -307,3 +307,17 @@ h1 span{
       0 2px 6px rgba(0,0,0,.24)!important;
   }
 }
+
+
+/* CTA headline: remove outline, keep soft contrast */
+.cta-band .cta-content h2{
+  color:#fff4dc!important;
+  -webkit-text-stroke:0!important;
+  text-shadow:0 3px 8px rgba(0,0,0,.30)!important;
+}
+@media(max-width:600px){
+  .cta-band .cta-content h2{
+    -webkit-text-stroke:0!important;
+    text-shadow:0 2px 6px rgba(0,0,0,.26)!important;
+  }
+}
