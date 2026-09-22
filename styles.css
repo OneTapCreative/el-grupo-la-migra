@@ -429,3 +429,12 @@ h1 span{
 .quote-form select{
   appearance:auto;
 }
+
+
+/* Keep paired booking dropdowns equal height */
+.quote-form select{
+  height:46px!important;
+  min-height:46px!important;
+  max-height:46px!important;
+  align-self:end;
+}
