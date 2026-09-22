@@ -24,3 +24,136 @@
 .travel-note strong{white-space:nowrap}.travel-note span{color:#667085;font-size:.86rem}
 @media(max-width:900px){.travel-head{grid-template-columns:1fr}.radius-badge{width:160px;height:160px}.city-list{grid-template-columns:repeat(3,1fr)}.travel-note{grid-template-columns:1fr}.travel-note strong{white-space:normal}}
 @media(max-width:600px){.city-list{grid-template-columns:1fr 1fr}.radius-badge{width:145px;height:145px}.radius-badge strong{font-size:3.7rem}.travel-callout{align-items:flex-start}.travel-note .btn{width:100%}}
+
+/* Vintage La Migra-inspired visual system */
+:root{
+  --black:#090705;
+  --black2:#17100b;
+  --card:#1b120d;
+  --red:#b81516;
+  --red2:#7f0c0d;
+  --blue:#f2b705;
+  --blue2:#c87900;
+  --gold:#f2b705;
+  --gold2:#d77b00;
+  --cream:#f2e3c8;
+  --white:#fffaf0;
+  --muted:#cbbda8;
+  --line:rgba(242,183,5,.22);
+  --shadow:0 25px 70px rgba(0,0,0,.38)
+}
+body{color:#211914;background:#fffaf0}
+.site-header{background:rgba(9,7,5,.94);border-bottom:1px solid rgba(242,183,5,.24)}
+.brand-mark{
+  background:linear-gradient(145deg,#c41616,#7e0909);
+  color:var(--gold);
+  border:2px solid var(--gold);
+  box-shadow:0 0 0 4px rgba(242,183,5,.12),inset 0 -4px 0 rgba(0,0,0,.18)
+}
+.brand-copy strong{
+  font-family:"Lobster",cursive;
+  font-size:1.65rem;
+  letter-spacing:.01em;
+  color:#c91918;
+  -webkit-text-stroke:1px var(--gold);
+  text-shadow:0 2px 0 #8d4700,0 4px 10px rgba(0,0,0,.45)
+}
+.brand-copy small{color:#e8d7bd}
+.nav{color:#eadcc6}
+.nav a:hover{color:var(--gold)}
+.menu-toggle{border-color:rgba(242,183,5,.35);color:var(--gold)}
+.section-dark{background:var(--black)}
+.section-alt{background:#f3e6d2}
+.hero-bg{
+  background:
+    radial-gradient(circle at 82% 18%,rgba(242,183,5,.14),transparent 28%),
+    radial-gradient(circle at 18% 82%,rgba(184,21,22,.24),transparent 32%),
+    linear-gradient(135deg,#050403 5%,#160b08 58%,#2a100b 100%)
+}
+.hero-bg:after{
+  background-image:
+    linear-gradient(rgba(242,183,5,.028) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(242,183,5,.028) 1px,transparent 1px)
+}
+.eyebrow{color:var(--gold)}
+.eyebrow.blue{color:var(--gold)}
+.eyebrow.red{color:var(--red)}
+h1,h2{font-family:"Lobster",cursive;letter-spacing:.005em}
+h1{font-size:clamp(4rem,7vw,7rem)}
+h1 span{
+  color:#c91818;
+  -webkit-text-stroke:2px var(--gold);
+  text-shadow:
+    0 2px 0 #c77700,
+    0 4px 0 #8d4500,
+    0 8px 20px rgba(0,0,0,.45)
+}
+h2{color:#8c0f10}
+.section-dark h2,.testimonials h2{color:var(--gold);text-shadow:0 2px 0 #7b0d0e}
+.hero-text{color:#e8dccb}
+.btn-primary{
+  color:#fff8ea;
+  background:linear-gradient(180deg,#d61c1d,#9d0d0e);
+  border-color:var(--gold);
+  box-shadow:0 8px 0 #7c4700,0 14px 28px rgba(126,12,13,.24)
+}
+.btn-primary:hover{box-shadow:0 5px 0 #7c4700,0 10px 22px rgba(126,12,13,.25)}
+.btn-outline{color:var(--gold);border-color:rgba(242,183,5,.52);background:rgba(242,183,5,.04)}
+.btn-light{background:var(--cream);color:#6f0c0d;border-color:var(--gold)}
+.trust-row{color:#d7c9b5}
+.photo-placeholder{
+  background:linear-gradient(145deg,#251811,#0e0906);
+  border-color:rgba(242,183,5,.22);
+  color:#c3a97d
+}
+.photo-placeholder:before,.photo-placeholder:after{background:rgba(242,183,5,.58)}
+.live-badge{background:var(--cream);color:#6e0c0d;border:1px solid var(--gold)}
+.quick-strip{background:linear-gradient(90deg,#6f0b0c,#b81516 45%,#d78800 100%)}
+.stats-grid strong{font-family:"Lobster",cursive;color:#fff4dc}
+.stats-grid span{color:#f6dfb7}
+.feature-list span{border-left-color:var(--gold);background:#f7ecd9}
+.event-card{background:#fffaf0;border-color:#ead7b7}
+.event-card:hover{border-color:rgba(242,183,5,.75);box-shadow:0 18px 38px rgba(127,12,13,.1)}
+.event-card h3{color:#8f1112}
+.gallery-grid .photo-placeholder{border-color:rgba(242,183,5,.25)}
+.testimonials{background:linear-gradient(135deg,#080604,#1b0b08 68%,#2a1009)}
+.review{border-color:rgba(242,183,5,.18);background:rgba(255,245,224,.045)}
+.review p{color:#eadfce}
+.review cite{color:#d9b873}
+.stars{color:var(--gold)}
+.faq-list details{border-color:#e7d1ac;background:#fffaf0}
+.faq-list summary{color:#7d1011}
+.quote-section{background:linear-gradient(145deg,#f7ecda,#ead9bc)}
+.contact-card{border-left-color:var(--gold);background:#fffaf0}
+.quote-form{background:#fffaf0}
+.quote-form input,.quote-form select,.quote-form textarea{border-color:#dfc59c;background:#fffdf8}
+.quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(242,183,5,.14)}
+.cta-band{background:linear-gradient(90deg,#7b0d0e,#b81516 48%,#cf7b00)}
+.footer{background:#070503;color:#cdbda5}
+.footer-grid strong{color:var(--gold)}
+.footer-grid a:hover{color:var(--gold)}
+.language-toggle{border-color:rgba(242,183,5,.28);color:#d8c6a9}
+.language-toggle:hover{color:var(--gold);border-color:rgba(242,183,5,.55)}
+.language-toggle .lang-active{color:#210d07;background:linear-gradient(135deg,#f7cc36,#d98a00)}
+.travel-section{background:linear-gradient(180deg,#fffaf0,#f1e2c9)}
+.travel-intro{color:#6f6253}
+.radius-badge{
+  background:radial-gradient(circle at 35% 25%,#c31b1c,#540707 68%);
+  border-color:rgba(242,183,5,.78);
+  box-shadow:0 22px 55px rgba(95,13,13,.2),inset 0 0 0 5px rgba(242,183,5,.15)
+}
+.radius-badge strong{font-family:"Lobster",cursive;color:var(--gold)}
+.radius-badge span{color:#fff1d0}
+.radius-badge small{color:#f6c94a}
+.travel-callout{
+  background:linear-gradient(90deg,#150906,#2b100b);
+  border-color:rgba(242,183,5,.28)
+}
+.travel-callout p{color:#d4c5af}
+.city-list span{background:#fffaf0;border-color:#e3cda8;color:#5d4b3a}
+.city-list span:before{color:var(--red)}
+.travel-note{background:#fffaf0;border-color:#e3cda8;border-left-color:var(--gold)}
+.mobile-cta{
+  background:linear-gradient(180deg,#d61c1d,#930c0d);
+  border:1px solid var(--gold)
+}
